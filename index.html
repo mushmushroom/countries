@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country info</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <main class="main">
+
+
+    <section class="countries">
+      <div class="countries__content">
+        <h1 class="countries__title">Country Info</h1>
+        <form action="#" class="countries__form disabled">
+          <div class="countries__box">
+            <input id="input" class="countries__list" aria-expanded="false" type="text" autocomplete="off"
+              role="combobox" name="countries" placeholder="Select a country..." />
+            <datalist id="countries">
+            </datalist>
+          </div>
+          <button class=" countries__btn" type="submit">Fetch info</button>
+        </form>
+        <div class="countries__info info-countries">
+          <span class="info-countries__loader"></span>
+          <div class="info-countries__content">
+            <img class="info-countries__flag" src="" alt="Country Flag">
+            <p><strong>Official Name:</strong> <span class="info-countries__name"></span></p>
+            <p><strong>Capital:</strong> <span class="info-countries__capital"></span></p>
+            <p><strong>Region:</strong> <span class="info-countries__region"></span></p>
+            <p><strong>Population:</strong> <span class="info-countries__population"></span></p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+    <script src="js/main.min.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY"></script> -->
+</body>
+
+</html>
